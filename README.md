@@ -1,3 +1,4 @@
+
 # RFM Customer Segmentation Analysis
 
 This project focuses on customer segmentation using RFM (Recency, Frequency, Monetary) analysis. RFM is a popular method for categorizing and targeting customers based on their recent purchase behavior, purchase frequency, and monetary value. By understanding customer segments, businesses can tailor their marketing strategies for more effective customer engagement.
@@ -20,7 +21,20 @@ This project focuses on customer segmentation using RFM (Recency, Frequency, Mon
 
 ## Data Dictionary
 
-For a detailed explanation of dataset columns, refer to the data dictionary section in the project code.
+Here is a brief explanation of the dataset columns:
+
+- `master_id`: Unique client number
+- `order_channel`: Shopping platform channel used (Android, iOS, Desktop, Mobile)
+- `last_order_channel`: The channel where the last purchase was made
+- `first_order_date`: The date of the first purchase made by the customer
+- `last_order_date`: The date of the customer's last purchase
+- `last_order_date_online`: The date of the last online purchase
+- `last_order_date_offline`: The date of the last offline purchase
+- `order_num_total_ever_online`: Total number of online purchases
+- `order_num_total_ever_offline`: Total number of offline purchases
+- `customer_value_total_ever_offline`: Total price paid for offline purchases
+- `customer_value_total_ever_online`: Total price paid for online shopping
+- `interested_in_categories_12`: List of categories the customer has shopped in the last 12 months
 
 ## Conclusion
 
