@@ -1,0 +1,5 @@
+# Ignore all csv files.
+
+flo_woman.csv
+flo_data_20k.csv
+discount_target_customers_ids.csv
