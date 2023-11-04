@@ -44,6 +44,28 @@ check_df(df)
 
 # Scripting the data preparation process.
 def data_prep(dataframe, date_var=None):
+    """
+    Prepares and analyzes data from the given DataFrame.
+
+    Parameters
+    ----------
+    dataframe : pd.DataFrame
+        The input DataFrame containing data to be processed.
+
+    date_var : str, optional
+        The name of the date variable in the DataFrame. If provided, the date variable will be converted to datetime format.
+
+    Returns
+    -------
+    pd.DataFrame
+        Summary statistics for order channels, including total orders and total customer value.
+
+    pd.Series
+        The top 10 customers with the highest total value spent.
+
+    pd.Series
+        The top 10 customers with the highest total number of orders.
+    """
     # Creating new variables for total orders and total value spent
     dataframe["order_num_total_ever"] = (
         dataframe["order_num_total_ever_online"]
